@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.codeclan.com.blackjack.HomeActivity">
+
+    <TextView
+        android:id="@+id/dealerHandTitle"
+        android:layout_width="113dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="62dp"
+        android:text="Dealer's hand"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dealersHand"
+        app:layout_constraintEnd_toEndOf="@+id/dealersHand"
+        app:layout_constraintStart_toStartOf="@+id/dealersHand"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playersHand"
+        android:layout_width="181dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="148dp"
+        android:onClick="onPlayButtonClicked"
+        android:text="PLAY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="160dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="result"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="@+id/playButton"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/playButton" />
+
+    <TextView
+        android:id="@+id/dealersHand"
+        android:layout_width="181dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/playersHand"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/playerHandTitle"
+        android:layout_width="115dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Player's hand"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/playersHand"
+        app:layout_constraintEnd_toEndOf="@+id/playersHand"
+        app:layout_constraintStart_toStartOf="@+id/playersHand"
+        app:layout_constraintTop_toBottomOf="@+id/dealersHand" />
+
+</android.support.constraint.ConstraintLayout>
